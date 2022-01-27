@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --backgroundColor: #EBEBEB;
+    --textColor: #53657D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background: var(--backgroundColor);
+}
+
+.main {
+    padding: 3rem;
+    text-align: center;
+    border-radius: 20px;
+    color: var(--textColor);
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.value {
+    font-size: 5rem;
+    margin: 3rem 0;
+    font-weight: 700;
+}
+
+.button {
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: var(--textColor);
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.button:nth-child(2) {
+    margin: 0 1rem;
+}
+
+.button:hover {
+    background: var(--backgroundColor)
+}
+
+.button:active {
+    box-shadow: inset 4px 4px 10px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 10px -1px rgba(255, 255, 255, 0.7);
+}
